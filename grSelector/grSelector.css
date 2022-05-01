@@ -1,0 +1,43 @@
+:host {
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+#selector {
+  border: 1px solid black;
+}
+
+#top {
+  padding: 5px;
+}
+#bottom {
+  height: 0;
+  overflow: hidden;
+}
+
+
+.item {
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.item:focus-visible {
+  outline: 3px solid green;
+  box-sizing: content-box;
+}
+
+.item:not( :last-child) {
+  margin-bottom: 6px;
+}
+
+@media (hover: hover) {
+  #selector:hover #bottom {
+    height: initial;
+  }
+  #selector:hover #top {
+    border-bottom:1px solid black ;
+  }
+}
