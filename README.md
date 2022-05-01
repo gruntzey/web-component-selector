@@ -10,4 +10,4 @@ gr-selector-items='sample, items, here'
 ```
 5. Thats all
 
-Default selector's value is the first word in __gr-selector-items__ attribute
+Default selector's value is the first word in __gr-selector-items__ attribute sequence
